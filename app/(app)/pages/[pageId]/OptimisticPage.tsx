@@ -19,7 +19,7 @@ export default function OptimisticPage({
   
 }) {
   const [open, setOpen] = useState(false);
-  const openModal = (_?: Page) => {
+  const openModal = () => {
     setOpen(true);
   };
   const closeModal = () => setOpen(false);

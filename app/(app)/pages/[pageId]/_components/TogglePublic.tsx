@@ -7,13 +7,11 @@ import { Globe,Copy, Check } from "lucide-react";
 import { updatePageAction } from "@/lib/actions/pages";
 
 export default function TogglePublicButton({ page }: { page: Page }) {
-  const [isPublic, setIsPublic] = useState(false)
   const [isCopied, setIsCopied] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
   const makePublic = async () => {
       await updatePageAction({...page, public: true})
-      setIsPublic(true)
     // Here you would typically make an API call to update the page's visibility
     console.log("Page is now public")
   }

@@ -73,7 +73,7 @@ export default function PageList({
 
 const Page = ({
   page,
-  openModal,
+  // openModal,
 }: {
   page: CompletePage;
   openModal: TOpenModal;

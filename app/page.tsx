@@ -8,8 +8,8 @@ import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
 
 
-export default async function LandingPage() {
-  const user = await currentUser();
+export default function LandingPage() {
+  const user = currentUser();
 
   return (
     <div className="flex flex-col min-h-screen">

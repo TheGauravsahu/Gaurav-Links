@@ -8,11 +8,9 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 
 const ShraredPage = async ({ params }: { params: { slug: string } }) => {
   const { page, pageLinks } = await getPageBySlugWithPageLinks(params.slug);
@@ -45,7 +43,6 @@ const ShraredPage = async ({ params }: { params: { slug: string } }) => {
                 asChild
               >
                 <Link href={link.url} target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-4 w-4" />
                   {link.title}
                 </Link>
               </Button>

@@ -76,7 +76,7 @@ export default function PageLinkList({
 
 const PageLink = ({
   pageLink,
-  openModal,
+  // openModal,
 }: {
   pageLink: CompletePageLink;
   openModal: TOpenModal;

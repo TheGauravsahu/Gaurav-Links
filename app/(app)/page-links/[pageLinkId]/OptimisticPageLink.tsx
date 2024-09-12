@@ -21,7 +21,7 @@ export default function OptimisticPageLink({
   pageId?: PageId
 }) {
   const [open, setOpen] = useState(false);
-  const openModal = (_?: PageLink) => {
+  const openModal = () => {
     setOpen(true);
   };
   const closeModal = () => setOpen(false);
