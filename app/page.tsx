@@ -174,7 +174,8 @@ export default function LandingPage() {
   );
 }
 
-function MountainIcon(props: any) {
+
+function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
