@@ -6,7 +6,8 @@ import { useTransition } from "react";
 import { useRouter } from "next/navigation";
 
 export default function UpdateEmailCard({ email }: { email: string }) {
-  const [startTransition] = useTransition();
+  const [isPending, startTransition] = useTransition();
+  console.log(isPending)
   const router = useRouter();
 
   const handleSubmit = async (event: React.SyntheticEvent) => {
