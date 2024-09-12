@@ -7,7 +7,9 @@ import { useTransition } from "react";
 import { useRouter } from "next/navigation";
 
 export default function UpdateNameCard({ name }: { name: string }) {
-  const [startTransition] = useTransition();
+  const [isPending,startTransition] = useTransition();
+  console.log(isPending)
+
   const router = useRouter();
   const handleSubmit = async (event: React.SyntheticEvent) => {
     event.preventDefault();
