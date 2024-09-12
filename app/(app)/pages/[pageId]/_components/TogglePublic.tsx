@@ -32,7 +32,7 @@ export default function TogglePublicButton({ page }: { page: Page }) {
   }, [isCopied])
 
   // Replace this with your actual page URL
-  const pageUrl = "http://localhost:3000/share/" + page.slug;
+  const pageUrl = "https://gaurav-links.vercel.app/share/" + page.slug;
 
 
 
